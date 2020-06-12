@@ -17,7 +17,7 @@ import javax.swing.border.LineBorder;
 public class BorderLoading extends JWindow {
 
     private Dimension dimensi = Toolkit.getDefaultToolkit().getScreenSize();
-    private JLabel lblLogo = new JLabel(new ImageIcon("C:\\Users\\v14nt\\OneDrive\\Documents\\NetBeansProjects\\Login\\src\\Image\\Splash Logo.png"));
+    private JLabel lblLogo = new JLabel(new ImageIcon(getClass().getResource("/Image/Splash Logo.png")));
     private JProgressBar barisProgres = new JProgressBar();
     private int time = 0;
     private Timer timer;
