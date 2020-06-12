@@ -1988,7 +1988,7 @@ public final class MainFrame extends javax.swing.JFrame implements ActionListene
 
     private void txtCatatMerekKeyPressed(java.awt.event.KeyEvent evt) {                                         
         if (evt.getKeyCode() == KeyEvent.VK_ENTER)
-            txtCatatTglKadaluarsa.requestFocus();
+            txtCatatTglKadaluarsa.getCalendarButton().doClick();
     }                                        
 
     private void txtCatatNamaKeyPressed(java.awt.event.KeyEvent evt) {                                        
