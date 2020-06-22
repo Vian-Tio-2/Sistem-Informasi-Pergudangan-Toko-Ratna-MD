@@ -1741,7 +1741,12 @@ public final class MainFrame extends javax.swing.JFrame implements ActionListene
                     "Infomasi", JOptionPane.INFORMATION_MESSAGE);
         } else {
 
-            int Harga = Integer.parseInt(model.getValueAt(selectedRowIdx, 3).toString());
+            int Harga;
+            if (model.getValueAt(selectedRowIdx, 3) == null){
+                Harga = 0;
+            } else {
+                Harga = Integer.parseInt(model.getValueAt(selectedRowIdx, 3).toString());
+            }
             boolean Message = false;
 
             try {
