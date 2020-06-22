@@ -321,9 +321,13 @@ public final class MainFrame extends javax.swing.JFrame implements ActionListene
             }
         });
 
-        lblName.setFont(new java.awt.Font("DialogInput", 0, 14)); // NOI18N
+        lblName.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblName.setForeground(new java.awt.Color(0, 0, 0));
+        lblName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblName.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/userIcon.png"))); // NOI18N
+        lblName.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lblName.setMinimumSize(new java.awt.Dimension(16, 16));
+        lblName.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         lblManage.setBackground(new java.awt.Color(102, 204, 255));
         lblManage.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
@@ -376,7 +380,7 @@ public final class MainFrame extends javax.swing.JFrame implements ActionListene
             panelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelMenuLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lblName, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(lblHome)
                 .addGap(50, 50, 50)
